@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade · Cauto</title>
+<meta name="description" content="Como o Cauto trata os seus dados: tudo é conferido no seu celular e nada é enviado para fora dele.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fundo: #F6F4EE;
+    --superficie: #FFFFFF;
+    --borda: #E3DFD6;
+    --tinta: #13263A;
+    --tinta-suave: #4A5868;
+    --noite: #0B1628;
+    --ciano: #22D3EE;
+    --seguro: #0B6E4F;
+    --seguro-fundo: #E3F2EC;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--tinta);
+    font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  header {
+    background: var(--noite);
+    color: #F1F7FF;
+  }
+  .topo {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .topo a { color: inherit; text-decoration: none; display: flex; align-items: center; gap: 12px; }
+  .topo svg { width: 40px; height: 40px; flex-shrink: 0; }
+  .marca { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 26px; }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 16px 48px;
+  }
+  h1, h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; line-height: 1.2; }
+  h1 { font-size: 34px; margin: 0 0 8px; }
+  h2 { font-size: 23px; margin: 36px 0 8px; }
+  .vigencia { color: var(--tinta-suave); margin: 0 0 24px; }
+  .resumo {
+    background: var(--seguro-fundo);
+    border-left: 6px solid var(--seguro);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 24px 0 8px;
+  }
+  .resumo p { margin: 0; }
+  .resumo strong { color: var(--seguro); }
+  .cartao {
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .cartao h3 { font-size: 19px; margin: 0 0 4px; }
+  .cartao p { margin: 0 0 6px; }
+  .cartao .prazo { margin: 0; font-weight: 700; color: var(--seguro); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: #0B5A8A; }
+  footer {
+    border-top: 1px solid var(--borda);
+    color: var(--tinta-suave);
+    font-size: 16px;
+  }
+  footer div { max-width: 760px; margin: 0 auto; padding: 20px 16px 32px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="topo">
+    <a href="./" aria-label="Cauto, página inicial">
+      <svg viewBox="0 0 108 108" aria-hidden="true">
+        <rect width="108" height="108" rx="24" fill="#0B1628"/>
+        <circle cx="54" cy="54" r="30" fill="none" stroke="#38BDF8" stroke-width="2.2" stroke-dasharray="0.9 3.1" opacity="0.7"/>
+        <circle cx="54" cy="54" r="24" fill="none" stroke="#9BE7FF" stroke-width="1.3"/>
+        <g transform="translate(36.6 36) scale(1.45)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z" stroke="#E6FBFF" stroke-width="1.2"/>
+          <path d="M9 12l2 2 4-4" stroke="#E6FBFF" stroke-width="1.4"/>
+        </g>
+      </svg>
+      <span class="marca">Cauto</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="vigencia">Válida a partir de 3 de outubro de 2026 · versão de teste 0.1</p>
+
+  <div class="resumo">
+    <p><strong>Em resumo:</strong> o Cauto confere as mensagens de texto <strong>no seu próprio celular</strong>. Nesta versão, nenhum dado é enviado para fora do aparelho: não temos servidor recebendo suas mensagens, não usamos anúncios e não usamos ferramentas de análise ou rastreamento.</p>
+  </div>
+
+  <h2>1. Quem somos</h2>
+  <p>O Cauto é um aplicativo para Android que avisa quando uma mensagem de texto (SMS ou RCS) parece golpe. Ele é desenvolvido por <strong>Wanderson da Silva Rocha</strong>, pessoa física, no Brasil. Para qualquer dúvida sobre privacidade, escreva para <a href="mailto:cautoapp@gmail.com">cautoapp@gmail.com</a>.</p>
+
+  <h2>2. O que o Cauto acessa</h2>
+  <p>Para funcionar, o Cauto pede o <strong>acesso às notificações</strong>, que você liga nas configurações do Android. Com ele, o Cauto lê o aviso de cada mensagem nova do seu app de mensagens de texto:</p>
+  <ul>
+    <li>o <strong>remetente</strong>, como aparece no aviso (nome do contato ou número);</li>
+    <li>o <strong>texto</strong> da mensagem.</li>
+  </ul>
+  <p>O Android dá a esse tipo de app acesso aos avisos de todos os apps. O Cauto, porém, só analisa os avisos do app de mensagens de texto. Os avisos de outros apps (WhatsApp, e-mail, redes sociais e outros) são ignorados e não são guardados.</p>
+  <p>Quando a mensagem tem código de verificação, o próprio Android esconde o conteúdo do aviso, e o Cauto não consegue ler nem o texto nem o remetente.</p>
+  <p>O Cauto <strong>não</strong> tem permissão para ler, enviar ou apagar SMS, não acessa seus contatos, sua localização, suas fotos nem seus arquivos.</p>
+
+  <h2>3. Como as mensagens são conferidas</h2>
+  <p>A análise é feita por regras dentro do próprio app, no seu celular, em poucos milissegundos. O Cauto nunca abre os links das mensagens. Mensagens normais são conferidas e descartadas na hora, sem deixar registro de conteúdo.</p>
+
+  <h2>4. O que fica guardado no seu celular</h2>
+  <p>Tudo fica na área privada do app, que outros apps não conseguem ler. Esses dados são excluídos do backup na nuvem e da transferência para outro celular, e são apagados quando você desinstala o Cauto.</p>
+  <div class="cartao">
+    <h3>Histórico de alertas</h3>
+    <p>Só das mensagens marcadas como "Atenção" ou "Perigoso": remetente, texto, motivo e horário. Serve para mostrar os últimos alertas na tela inicial.</p>
+    <p class="prazo">Guardado por até 7 dias, no máximo 20 alertas.</p>
+  </div>
+  <div class="cartao">
+    <h3>Aviso de "troquei de número"</h3>
+    <p>Um código (hash) gerado a partir do remetente que disse ter trocado de número, sem o nome ou o número escrito. Serve para reconhecer o golpe do falso parente se ele pedir dinheiro depois.</p>
+    <p class="prazo">Guardado por até 48 horas.</p>
+  </div>
+  <div class="cartao">
+    <h3>Última mensagem conferida</h3>
+    <p>Só o horário, sem remetente nem texto. Serve para mostrar que a proteção está funcionando.</p>
+    <p class="prazo">Substituído a cada mensagem nova.</p>
+  </div>
+  <div class="cartao">
+    <h3>Funcionamento do app</h3>
+    <p>Contadores do teste grátis, etapas do primeiro uso e estado da proteção. Nenhum deles tem texto de mensagem.</p>
+    <p class="prazo">Guardado enquanto o app estiver instalado.</p>
+  </div>
+
+  <h2>5. Compartilhamento</h2>
+  <p>Nesta versão, o Cauto <strong>não envia, não vende e não compartilha</strong> nenhum dado com ninguém, nem com o desenvolvedor. Não há anúncios, ferramentas de análise, rastreamento nem relatórios automáticos de erro.</p>
+
+  <h2>6. Notificações e tela bloqueada</h2>
+  <p>Com o celular bloqueado, o alerta do Cauto mostra apenas "O Cauto encontrou uma mensagem suspeita", sem remetente nem texto. Os detalhes só aparecem com o celular desbloqueado.</p>
+
+  <h2>7. Permissões que o app usa</h2>
+  <ul>
+    <li><strong>Acesso às notificações:</strong> ler os avisos do app de mensagens de texto, como descrito acima.</li>
+    <li><strong>Mostrar notificações:</strong> avisar você sobre mensagens suspeitas e sobre a proteção.</li>
+    <li><strong>Iniciar com o celular:</strong> manter a checagem da proteção funcionando depois que o celular reinicia.</li>
+    <li><strong>Internet:</strong> declarada para uma futura análise extra, mas <strong>não é usada nesta versão</strong>.</li>
+  </ul>
+
+  <h2>8. Seus direitos</h2>
+  <p>Como os dados ficam só no seu celular, você tem controle total sobre eles. Para apagar tudo, basta limpar os dados do Cauto nas configurações do Android ou desinstalar o app. Para retirar o acesso às notificações, desligue a chave do Cauto em Configurações → Notificações → Acesso às notificações (o caminho pode variar conforme o celular). Esta política segue a Lei Geral de Proteção de Dados (Lei nº 13.709/2018). Se tiver dúvidas ou quiser exercer algum direito, fale com a gente pelo e-mail <a href="mailto:cautoapp@gmail.com">cautoapp@gmail.com</a>.</p>
+
+  <h2>9. Crianças</h2>
+  <p>O Cauto não é direcionado a crianças.</p>
+
+  <h2>10. Mudanças nesta política</h2>
+  <p>No futuro, o Cauto pode oferecer uma análise extra em servidor para assinantes. Se isso acontecer, esta política será atualizada <strong>antes</strong>, explicando exatamente o que é enviado e com que proteção, e o app avisará você. Nada será enviado sem esse aviso. A data no topo desta página mostra a versão em vigor.</p>
+</main>
+
+<footer>
+  <div>Cauto · <a href="mailto:cautoapp@gmail.com">cautoapp@gmail.com</a> · <a href="./">Página inicial</a></div>
+</footer>
+</body>
+</html>
